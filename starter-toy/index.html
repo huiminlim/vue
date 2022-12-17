@@ -25,6 +25,11 @@
       <input type="text" v-model="lastName" />
 
       <p> This is reactivity: {{ firstName }} {{ lastName }}</p>
+      <hr />
+
+      <!-- Binding the attributes in HTML to have a dynamic value coded in Vue script -->
+      <p><a v-bind:href="url" target="_blank">Google</a></p>
+
     </div>
 
     <!-- Using Vue from CDN instead of downloading build tools locally -->

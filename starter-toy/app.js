@@ -45,7 +45,8 @@ Vue.createApp({
         return {
             firstName: "Jane",
             lastName: "Tan",
-            world: "Hello, world!"
+            world: "Hello, world!",
+            url:"https://google.com"
         }
     },
 // This is a class selector ('.' in front of "app")
