@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>VueJS Course</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <div id="app"></div>
+
+    <!-- Using Vue from CDN instead of downloading build tools locally -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- This is the object that Vue mounts on -->
+    <!-- and performs the following action after createApp is done  -->
+    <!-- and app is mounted -->
+    <!-- The Vue app is created in app.js -->
+    <div id="app">{{ message }}</div>
+    <script>
+      const { createApp } = Vue
+      createApp({
+        data() {
+          return {
+            message: 'Hello Vue!'
+          }
+        }
+      }).mount('#app') // This is the App that Vue has mounted,
+      // so execute this bracket of code
+    </script>
 
     <script src="app.js"></script>
   </body>
