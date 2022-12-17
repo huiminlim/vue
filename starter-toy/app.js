@@ -54,6 +54,9 @@ Vue.createApp({
     methods: {
         increment(){
             this.age += 1
+        },
+        updateLastName(event){
+            this.lastName = event.target.value
         }
     }
 // This is a class selector ('.' in front of "app")

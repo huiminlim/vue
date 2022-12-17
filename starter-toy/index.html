@@ -22,7 +22,8 @@
 
       <!-- Map the attribute using the v-model directive -->
       <label>Last Name</label>
-      <input type="text" v-model="lastName" />
+      <!-- Mimic v-model with more control -->
+      <input type="text" :value="lastName" v-on:input="updateLastName" />
 
       <p> This is reactivity: {{ firstName }} {{ lastName }}</p>
       <hr />

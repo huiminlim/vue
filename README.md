@@ -54,6 +54,10 @@ Another directive is the Model directive, using the `v-model` directive in HTML.
 
 The data is updated everywhere referenced when the `v-model` directive is used.
 
+Finer control can also be achieved with the events handling on input received and varible binding.
+
+![Script](doc/assets/code-snapshot-directive-4.png)
+
 ## Events Listener
 
 Events handling can be triggered by the `v-on` or `@` directive.
