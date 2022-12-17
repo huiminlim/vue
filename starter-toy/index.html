@@ -45,6 +45,8 @@
         <p>{{ age }}</p>
         <button type="button" @:click="increment">Increment</button>
         <button type="button" v-on:click="age--">Decrement</button>
+        <!-- Decrement only when click and press down on control -->
+        <button type="button" v-on:click.ctrl="age--">Ctrl+Decrement</button>
       </div>
     </div>
 
