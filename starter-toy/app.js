@@ -46,7 +46,8 @@ Vue.createApp({
             firstName: "Jane",
             lastName: "Tan",
             world: "Hello, world!",
-            url:"https://google.com"
+            url:"https://google.com",
+            raw_url: '<a href="https://google.com" target="_blank">Google</a>'
         }
     },
 // This is a class selector ('.' in front of "app")

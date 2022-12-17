@@ -30,6 +30,10 @@
       <!-- Binding the attributes in HTML to have a dynamic value coded in Vue script -->
       <p><a v-bind:href="url" target="_blank">Google</a></p>
 
+      <!-- This is dangerous! It allows raw HTML string to be rendered -->
+      <!-- There is a risk of XSS -->
+      <p v-html="raw_url"></p>
+
     </div>
 
     <!-- Using Vue from CDN instead of downloading build tools locally -->
