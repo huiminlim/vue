@@ -23,7 +23,8 @@
       <!-- Map the attribute using the v-model directive -->
       <label>Last Name</label>
       <!-- Mimic v-model with more control -->
-      <input type="text" :value="lastName" v-on:input="updateLastName('Event triggered', $event)" />
+      <!-- Using the event modifier (.prevent) is equivalent to event.preventDefault() -->
+      <input type="text" :value="lastName" v-on:input.prevent="updateLastName('Event triggered', $event)" />
 
       <p> This is reactivity: {{ firstName }} {{ lastName }}</p>
       <hr />
