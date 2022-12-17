@@ -33,6 +33,11 @@ Vue.createApp({
         }
     },
     methods: {
+        // fullName(){
+        //     return `${this.firstName} ${this.lastName.toUpperCase()}`
+        // }
+    },
+    computed: {
         fullName(){
             return `${this.firstName} ${this.lastName.toUpperCase()}`
         }
@@ -64,7 +69,7 @@ Vue.createApp({
         updateMiddleName(event){
             this.middleName = event.target.value
         }
-    }
+    },
 // This is a class selector ('.' in front of "app")
 // This corresponds to index.htnl: <div class="app">...</div>
 }).mount("#app2")

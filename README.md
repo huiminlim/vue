@@ -75,3 +75,11 @@ For example:
 ![Script](docs/assets/code-snapshot-v-model-modifier-1.png)
 
 Some modifiers include trim whitespace etc.
+
+## Computed Properties
+
+Computed properties are properties that are only updated when their component properties are updated.
+
+![Script](docs/assets/code-snapshot-computed-properties-1.png)
+
+![Site](docs/assets/code-snapshot-computed-properties-2.png)
