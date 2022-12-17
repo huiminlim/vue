@@ -5,8 +5,14 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <div id="app">{{ firstName }}, {{ world }}</div><!-- Create and read from 1st instance-->
-    <div id="app2">{{ firstName }}, {{ world }}</div> <!-- Create and read from 2nd instance-->
+    <!-- Create and read from 1st instance-->
+    <div id="app">{{ `${firstName} ${lastName.toUpperCase()}` }}, {{ world }}</div>
+
+    <!-- Calling a method from a Vue instance -->
+    <div id="app1">{{ fullName() }}, {{ world }}</div>
+
+    <!-- Create and read from 2nd instance-->
+    <div id="app2">{{ firstName }}, {{ world }}</div>
 
     <!-- Using Vue from CDN instead of downloading build tools locally -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

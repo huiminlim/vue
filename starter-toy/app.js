@@ -7,6 +7,7 @@ const vm = Vue.createApp({
     data() {
         return {
             firstName: "John",
+            lastName: "Tan",
             world: "Hello, world!"
         }
     },
@@ -22,6 +23,21 @@ setTimeout(()=>{
 
     vm.firstName = "Bob" // with proxy
 }, 2000 /*ms*/),
+
+Vue.createApp({
+    data() {
+        return {
+            firstName: "Jack",
+            lastName: "Tan",
+            world: "Hello, world!"
+        }
+    },
+    methods: {
+        fullName(){
+            return `${this.firstName} ${this.lastName.toUpperCase()}`
+        }
+    }
+}).mount("#app1")
 
 // Create the second Vue instance
 Vue.createApp({
