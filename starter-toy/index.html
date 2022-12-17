@@ -47,6 +47,7 @@
         <button type="button" v-on:click="age--">Decrement</button>
         <!-- Decrement only when click and press down on control -->
         <button type="button" v-on:click.ctrl="age--">Ctrl+Decrement</button>
+        <input type="text" v-model.number="age"/>
       </div>
     </div>
 

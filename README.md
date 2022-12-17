@@ -65,3 +65,13 @@ Events handling can be triggered by the `v-on` or `@` directive.
 ![Script](docs/assets/code-snapshot-events-handling-1.png)
 
 ![Site](docs/assets/code-snapshot-events-handling-2.png)
+
+## v-model Modifiers
+
+Some input modifiers can be used to limit or format user input.
+
+For example:
+
+![Script](docs/assets/code-snapshot-v-model-modifier-1.png)
+
+Some modifiers include trim whitespace etc.
