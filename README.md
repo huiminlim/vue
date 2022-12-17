@@ -83,3 +83,9 @@ Computed properties are properties that are only updated when their component pr
 ![Script](docs/assets/code-snapshot-computed-properties-1.png)
 
 ![Site](docs/assets/code-snapshot-computed-properties-2.png)
+
+## Watchers
+
+Watchers perform additional tasks when a property is changed.
+
+![Script](docs/assets/code-snapshot-watchers.png)

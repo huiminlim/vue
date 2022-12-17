@@ -70,6 +70,15 @@ Vue.createApp({
             this.middleName = event.target.value
         }
     },
+    // Perform additional tasks when a value changes
+    // on top of the actual value change
+    watch: {
+        age(newVal, oldVal){
+            setTimeout(() => {
+                this.age = 20
+            }, 3000)
+        }
+    }
 // This is a class selector ('.' in front of "app")
 // This corresponds to index.htnl: <div class="app">...</div>
 }).mount("#app2")
