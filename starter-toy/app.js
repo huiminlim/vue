@@ -55,7 +55,9 @@ Vue.createApp({
         increment(){
             this.age += 1
         },
-        updateLastName(event){
+        updateLastName(msg, event){
+            event.preventDefault()
+            console.log(msg) // Passing log message in
             this.lastName = event.target.value
         }
     }
