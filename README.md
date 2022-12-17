@@ -33,3 +33,17 @@ Methods may be defined and used for evaluating complex expressions cleanly.
 ![Script](docs/assets/code-snapshot-method-2.png)
 
 ![Site](docs/assets/code-snapshot-method-1.png)
+
+## Directives
+
+Loading time of the HTML and the script may be different and the rendering may appear broken if the HTML loads first without the script.
+
+All directives in Vue begin with `v-` prefix.
+
+An example is the Cloak directive
+
+The directive `v-cloak` may be used in the HTML as an attribute. Then, the CSS can hide the attribute until the script is ready.
+
+![Script](doc/assets/code-snapshot-directive-2.png)
+
+![Script](doc/assets/code-snapshot-directive-1.png)

@@ -6,3 +6,8 @@ input[type="text"] {
   margin: 10px 0;
   display: block;
 }
+
+/* Directive in Vue to hide the attribute until ready */
+[v-cloak] {
+  display: none;
+}
