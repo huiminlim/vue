@@ -12,7 +12,18 @@
     <div id="app1" v-cloak>{{ fullName() }}, {{ world }}</div>
 
     <!-- Create and read from 2nd instance-->
-    <div id="app2" v-cloak>{{ firstName }}, {{ world }}</div>
+    <div id="app2" v-cloak>
+      <p>{{ firstName }}, {{ world }}</p>
+      <hr />
+
+      <!-- Map the attribute using the v-model directive -->
+      <label>First Name</label>
+      <input type="text" v-model="firstName" />
+
+      <!-- Map the attribute using the v-model directive -->
+      <label>Last Name</label>
+      <input type="text" v-model="lastName" />
+    </div>
 
     <!-- Using Vue from CDN instead of downloading build tools locally -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

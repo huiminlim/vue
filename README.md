@@ -47,3 +47,7 @@ The directive `v-cloak` may be used in the HTML as an attribute. Then, the CSS c
 ![Script](doc/assets/code-snapshot-directive-2.png)
 
 ![Script](doc/assets/code-snapshot-directive-1.png)
+
+Another directive is the Model directive, using the `v-model` directive in HTML.
+
+![Script](doc/assets/code-snapshot-directive-3.png)

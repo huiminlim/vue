@@ -44,6 +44,7 @@ Vue.createApp({
     data() {
         return {
             firstName: "Jane",
+            lastName: "Tan",
             world: "Hello, world!"
         }
     },
