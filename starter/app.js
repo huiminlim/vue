@@ -9,4 +9,6 @@ Vue.createApp({
             world: "Hello, world!"
         }
     },
+// This is a id selector ('#' in front of "app")
+// This corresponds to index.htnl: <div id="app">...</div>
 }).mount("#app")
