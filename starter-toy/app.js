@@ -44,6 +44,7 @@ Vue.createApp({
     data() {
         return {
             firstName: "Jane",
+            middleName: "",
             lastName: "Tan",
             world: "Hello, world!",
             url:"https://google.com",
@@ -59,6 +60,9 @@ Vue.createApp({
             // event.preventDefault()
             console.log(msg) // Passing log message in
             this.lastName = event.target.value
+        },
+        updateMiddleName(event){
+            this.middleName = event.target.value
         }
     }
 // This is a class selector ('.' in front of "app")
