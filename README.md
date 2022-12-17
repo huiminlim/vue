@@ -51,3 +51,5 @@ The directive `v-cloak` may be used in the HTML as an attribute. Then, the CSS c
 Another directive is the Model directive, using the `v-model` directive in HTML.
 
 ![Script](doc/assets/code-snapshot-directive-3.png)
+
+The data is updated everywhere referenced when the `v-model` directive is used.
