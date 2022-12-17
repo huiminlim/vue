@@ -5,16 +5,25 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-
-    <!-- Using Vue from CDN instead of downloading build tools locally -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
     <!-- This is the object that Vue mounts on -->
     <!-- and performs the following action after createApp is done  -->
     <!-- and app is mounted -->
     <!-- The Vue app is created in app.js -->
-    <div id="app">{{ message }}</div>
-    <script>
+
+    <!-- Performs the expression -->
+    <!-- <div id="app">{{ 2 + 2 }}</div> -->
+
+    <!-- Does the function message() -->
+    <!-- <div id="app">{{ message }}</div> -->
+
+    <!-- Gets the data expression {{firstName}} evaluated by data() -->
+    <!-- ONLY EXPRESSIONS ARE ALLOWED, not variables -->
+    <!-- This expression is only allowed in div tags -->
+    <!-- <div id="app">{{ firstName }}</div> -->
+    <div id="app">{{ world }}</div>
+
+    <!-- Creates the script inside the html to use the method data()-->
+    <!-- <script>
       const { createApp } = Vue
       createApp({
         data() {
@@ -24,8 +33,11 @@
         }
       }).mount('#app') // This is the App that Vue has mounted,
       // so execute this bracket of code
-    </script>
+    </script> -->
 
+    <!-- Using Vue from CDN instead of downloading build tools locally -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
+
   </body>
 </html>
