@@ -47,9 +47,15 @@ Vue.createApp({
             lastName: "Tan",
             world: "Hello, world!",
             url:"https://google.com",
-            raw_url: '<a href="https://google.com" target="_blank">Google</a>'
+            raw_url: '<a href="https://google.com" target="_blank">Google</a>',
+            age: 20
         }
     },
+    methods: {
+        increment(){
+            this.age += 1
+        }
+    }
 // This is a class selector ('.' in front of "app")
 // This corresponds to index.htnl: <div class="app">...</div>
 }).mount("#app2")

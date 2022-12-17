@@ -53,3 +53,11 @@ Another directive is the Model directive, using the `v-model` directive in HTML.
 ![Script](doc/assets/code-snapshot-directive-3.png)
 
 The data is updated everywhere referenced when the `v-model` directive is used.
+
+## Events Listener
+
+Events handling can be triggered by the `v-on` or `@` directive.
+
+![Script](docs/assets/code-snapshot-events-handling-1.png)
+
+![Site](docs/assets/code-snapshot-events-handling-2.png)

@@ -34,6 +34,11 @@
       <!-- There is a risk of XSS -->
       <p v-html="raw_url"></p>
 
+      <div>
+        <p>{{ age }}</p>
+        <button type="button" @:click="increment">Increment</button>
+        <button type="button" v-on:click="age--">Decrement</button>
+      </div>
     </div>
 
     <!-- Using Vue from CDN instead of downloading build tools locally -->
