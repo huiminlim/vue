@@ -89,3 +89,11 @@ Computed properties are properties that are only updated when their component pr
 Watchers perform additional tasks when a property is changed.
 
 ![Script](docs/assets/code-snapshot-watchers.png)
+
+## Conditional Rendering vs `v-show`
+
+Conditional rendering (`v-if`, `v-else-if`, `v-else`) renders only when the condition is true.
+
+`v-show` however, the element is still there but only visible when condition true.
+
+Use conditional rendering is cheap on load, but not cheap on toggling as re-rendering is needed often.
