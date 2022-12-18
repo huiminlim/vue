@@ -53,6 +53,8 @@
     <p>Shows the content if input is 1</p>
     <input type="number" v-model="mode" />
     <p v-if="mode == 1">Showing v-if directive content</p>
+    <p v-else-if="mode == 2">Showing v-else-if directive content</p>
+    <p v-else>Showing v-else directive content</p>
   </div>
 
   <script src="https://unpkg.com/vue@next"></script>
