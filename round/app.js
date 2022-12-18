@@ -16,3 +16,11 @@ let vm = Vue.createApp({
         }
     }
 }).mount('#app')
+
+let vm2 = Vue.createApp({
+    data() {
+        return {
+            mode: 1
+        }
+    }
+}).mount('#app2')

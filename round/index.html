@@ -47,6 +47,14 @@
 
   </div>
 
+  <br>
+
+  <div id="app2">
+    <p>Shows the content if input is 1</p>
+    <input type="number" v-model="mode" />
+    <p v-if="mode == 1">Showing v-if directive content</p>
+  </div>
+
   <script src="https://unpkg.com/vue@next"></script>
   <script src="app.js"></script>
 </body>
