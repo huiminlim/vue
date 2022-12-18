@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+  <title>VueJS Course</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="app">
+    <ul>
+      <!-- Using a list expression on the class "bird" -->
+      <li v-for="bird in birds" :class="bird">
+        {{ bird }}
+      </li>
+
+      <br>
+
+      <!-- Representing the alias and index in loop -->
+      <li v-for="(bird, index) in birds" :class="bird">
+        {{ bird }} {{ index }}
+      </li>
+    </ul>
+
+    <ul>
+      <li v-for="person in people" :class="people">
+        {{ person.name }} {{ person.age }}
+      </li>
+    </ul>
+
+    <ul>
+      <li v-for="person in people" :class="people">
+      <div v-for="(value, key, index) in person" :class="people">
+          {{ key }} {{ value }} {{ index }}
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
