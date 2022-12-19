@@ -97,3 +97,16 @@ Conditional rendering (`v-if`, `v-else-if`, `v-else`) renders only when the cond
 `v-show` however, the element is still there but only visible when condition true.
 
 Use conditional rendering is cheap on load, but not cheap on toggling as re-rendering is needed often.
+
+## Lifecycle Hooks
+
+A lifecycle hook tells us how the webpage and script will be rendered.
+
+![Lifecycle Hook](https://dltqhkoxgn1gx.cloudfront.net/img/posts/how-to-use-lifecycle-hooks-in-vue3-1.png)
+
+There are four main events (8 main hooks) that you can utilize in your Vue app.
+
+- Creation — runs on your component’s creation
+- Mounting — runs when the DOM is mounted
+- Updates — runs when reactive data is modified
+- Destruction — runs right before your element is destroyed.
