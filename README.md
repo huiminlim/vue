@@ -110,3 +110,92 @@ There are four main events (8 main hooks) that you can utilize in your Vue app.
 - Mounting — runs when the DOM is mounted
 - Updates — runs when reactive data is modified
 - Destruction — runs right before your element is destroyed.
+
+## Development Tools
+
+### Vite
+
+Vite is a useful project creation tool to configure projects for use.
+
+```bash
+npm create vite@latest
+```
+
+### Sass
+
+Sass is a helpful tool to style webpages on top of CSS.
+
+However, Sass cannot be directly used in Javascript, so it has to be compiled into CSS.
+
+To install, use the command.
+
+```bash
+npm install sass
+```
+
+### PostCSS
+
+PostCSS is also popular compared to SASS.
+
+CSS is being compiled to PostCSS objects and the advantage is Javascript can be used to interact and modify the PostCSS object.
+
+To install, use the command.
+
+```bash
+npm install autoprefixer --save-dev
+```
+
+A `postcss.config.cjs` file is required.
+
+### ESLint
+
+ESLint helps to lint code and autocomplete.
+
+To install, use the command.
+
+```bash
+npm install eslint --save-dev
+npm install vite-plugin-eslint --save-dev --force
+```
+
+Create a `vite.config.js` to use ESLint in Vite.
+
+```javascript
+import { defineConfig } from "Vite"
+import eslint from "vite-plugin-eslint"
+export default defineConfig ({
+    plugins: [eslint()]
+})
+```
+
+To use ESLint to fix, the `package.json` must look like this.
+
+```json
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint main.js --fix"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.30.0",
+    "vite": "^4.0.0",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
+```
+
+To fix, run the command.
+
+```bash
+npm run lint
+```
